@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,11 +84,9 @@ WSGI_APPLICATION = 'bot_core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'facebook_bot',
+        'NAME': 'core',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',
-
     }
 }
 
